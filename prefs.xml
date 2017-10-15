@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Site Information"
+        />
+     
+    
+    
+    <ListPreference
+        android:key="kelompok"
+        android:title="ISP/ISP Landed/OSP/CO/ODC Active"
+        android:summary="Keep Inspection Group"
+        android:entries="@array/kelompokentries"
+        android:entryValues="@array/kelompokvalue"/>
+        
+        <EditTextPreference
+        android:key="siteid"
+        android:title="SiteID"
+        android:summary="This give you site ID in entire inspection activity" />
+    
+    
+    <PreferenceCategory
+        android:title="Inspection Information"
+        />
+    
+   
+    
+    <ListPreference
+        android:key="type"
+        android:title="Inspection Type"
+        android:summary="Pre-ATP/ATP/Service Test"
+        android:entries="@array/listentries"
+        android:entryValues="@array/listvalue"/>
+    
+    <ListPreference
+        android:key="sitemng"
+        android:title="Site Manager"
+        android:summary="This keep up Site Manager identity for particular Area / Site ID"
+        android:entries="@array/listsitemng"
+        android:entryValues="@array/sitemngvalue" />
+    
+    <PreferenceCategory
+        android:title="Partner Information"
+        />
+    
+    <ListPreference
+        android:key="vendor"
+        android:title="Vendor"
+        android:summary="This keep up your vendor partner who's responsible for the project"
+        android:entries="@array/listvendor" 
+        android:entryValues="@array/vendorvalue"/>
+    
+    <EditTextPreference
+        android:key="subcon"
+        android:title="Subcon"
+        android:inputType= "textCapSentences"
+        android:summary="This keep up your vendor's partner who's responsible for the project" />
+    
+    <PreferenceCategory
+        android:title="System Setting"
+        />
+    
+    <EditTextPreference
+        android:key="limit"
+        android:title="Sync Limit Number"
+        android:digits="0123456789"
+        android:summary="This keep number of minimal Sync server" />
+    
+    <CheckBoxPreference
+        android:key="displayQ"
+        android:title="High Quality Dislpay"
+        android:summary="Quality display item list inspection in offline mode"
+        android:summaryOn="High Quality Display Enabled"
+        android:summaryOff="High Quality Display Disabled"
+        android:defaultValue="false"
+        />
+    
+    
+</PreferenceScreen>
