@@ -31,7 +31,7 @@ public class Main_Login extends Activity {
 	@Override
 	 protected void onCreate(Bundle savedInstanceState) {
 		 super.onCreate(savedInstanceState);
-		 setContentView(R.layout.login);
+		 setContentView(R.layout.login); //access to login interface
 		 
 		 etUserName = (EditText)findViewById(R.id.etInspector);
 		 etPassword = (EditText)findViewById(R.id.etPassword);
