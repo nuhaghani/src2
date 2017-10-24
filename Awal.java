@@ -73,7 +73,7 @@ public class Awal extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main); //access to hompage interface
         
         SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
         boolean first = settings.getBoolean("first", false);
